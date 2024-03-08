@@ -1,0 +1,16 @@
+{
+    "name": "VnExpressAuto",
+    "description" : "Extension vnexpress",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+	    "default_popup": "popup.html"
+	},
+    "content_scripts": [
+	    {
+	      "matches": ["https://vnexpress.net/*"],
+	      "js": ["contentScript.js"],
+	      "run_at": "document_end"
+	    }
+	  ]
+  }	
